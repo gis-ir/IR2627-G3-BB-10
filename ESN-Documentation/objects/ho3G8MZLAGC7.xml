@@ -11,7 +11,7 @@
     <stringProperty name="phone-number" category="detail"><![CDATA[]]></stringProperty>
     <stringProperty name="email" category="detail"><![CDATA[]]></stringProperty>
     <urlProperty name="web" category="detail"><![CDATA[]]></urlProperty>
-    <fileProperty name="logo" category="detail" tooltip="file-info"><![CDATA[organization_logo.png]]></fileProperty>
+    <fileProperty name="logo" category="detail" tooltip="file-info"><![CDATA[17782888.png]]></fileProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>
