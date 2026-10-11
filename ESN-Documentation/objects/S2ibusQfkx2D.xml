@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="S2ibusQfkx2D" classes="business-requirement business-process" acceptedChildren=":Proteus-none" acceptedParents=":Proteus-any">
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[PRON-]]></prefix>
+      <number>003</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Gestión de facturas]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-10-11</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="description" category="detail"><![CDATA[El intercambio de facturas entre los distintos departamentos de la organización, se realizan a través de correos electrónicos, que llegan al equipo de tesorería. A partir de ahí la gestión durante este proceso hace uso de almacenamiento en la nube y programas de edición de hojas de cálculo, para el registro de dichas facturas. El tesorero realiza labores de supervisión y también puede tomar parte directa en el proceso, si procede. El problema principal, reside en el hecho de que el equipo debe traspasar los datos de aplicación en aplicación manualmente, a lo largo de los tres pasos que conforman el proceso.]]></markdownProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[proceso de gestion de facturas.svg]]></fileProperty>
+    <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">tbd</enumProperty>
+    <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
+    <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
