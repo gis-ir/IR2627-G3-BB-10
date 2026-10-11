@@ -16,7 +16,7 @@ Por otra parte, ESN Sevilla también dispone de su propia página web que usan i
  
 En cuanto a la comunicación con los clientes, se basa principalmente en el uso de las redes sociales para informar sobre la propia organización y cómo registrarse (tanto si deseas ser voluntario o eres un estudiante Erasmus interesado en su servicio), además de publicitar los próximos viajes, talleres, etc.
  
-No obstante, un punto débil sería la gestión de las facturas, que aunque posee una gran importancia para el funcionamiento de la organización, no está para nada automatizado y se realiza a mano.
+No obstante, un punto débil sería la gestión de las facturas, que aunque posee una gran importancia para el funcionamiento de la organización, no está para nada automatizado y se realiza a mano. El encargado de realizar este proceso debe enviar múltiples correos, registrar los gastos en múltiples hojas de cálculo, guardar la localización de los documentos, analizar la información, comprobar que no se ha cometido ningún error y volver a repetir el proceso para nuevas facturas. Todo esto sin ningún tipo de herramienta de ayuda.
 
 ]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
