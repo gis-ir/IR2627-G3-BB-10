@@ -8,17 +8,17 @@
       <trace target="UCQb9gvj6rH8" traceType=":Proteus-author"/>
     </traceProperty>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="text" category="detail"><![CDATA[A nivel organizativo, ESN tiene tres niveles: local, nacional e internacional. Debido a esto, su entorno software actual tiene un tamaño considerable.
- 
-En primer lugar, la organización internacional les proporciona un entorno software LAMP; es decir, usa Linux como sistema operativo, Apache como servidor web, MySQL y PHP como lenguaje de programación. Esta combinación de herramientas software de código abierto les permite alojar y ejecutar aplicaciones web con un coste relativamente bajo. Sobre este entorno se realizan procesos tan importantes como el registro por parte de los estudiantes Erasmus para obtener la ESNCard y la inscripción en viajes y actividades.
- 
-Por otra parte, ESN Sevilla también dispone de su propia página web que usan internamente, desarrollada con Drupal y gestionada con ayuda de Plesk. Ambas herramientas les ofrecen una gran flexibilidad y automatización a la hora de administrar la web. Adicionalmente, hacen uso de formularios y documentos Excel para almacenar datos sobre los estudiantes, voluntarios y eventos.
- 
-En cuanto a la comunicación con los clientes, se basa principalmente en el uso de las redes sociales para informar sobre la propia organización y cómo registrarse (tanto si deseas ser voluntario o eres un estudiante Erasmus interesado en su servicio), además de publicitar los próximos viajes, talleres, etc.
- 
-No obstante, un punto débil sería la gestión de las facturas, que aunque posee una gran importancia para el funcionamiento de la organización, no está para nada automatizado y se realiza a mano. El encargado de realizar este proceso debe enviar múltiples correos, registrar los gastos en múltiples hojas de cálculo, guardar la localización de los documentos, analizar la información, comprobar que no se ha cometido ningún error y volver a repetir el proceso para nuevas facturas. Todo esto sin ningún tipo de herramienta de ayuda.
+    <markdownProperty name="text" category="detail"><![CDATA[El entorno software actual de la organización, en el caso concreto de la gestión de facturas, se compone de tres herramientas de software y programas principales, que se usan en conjunto, para la realización de esta labor, siendo estas herramientas las siguientes: un servicio de correo electrónico, un servicio de almacenamiento en la nube, en este caso Google Drive, y dos hojas de cálculo, que se editan a través de un programa de suite ofimática diseñado para ello, en este caso Microsoft Excel.
 
-]]></markdownProperty>
+En primer lugar, el servicio de correo electrónico, en este contexto, se usa con el fin de enviar las facturas que se van emitiendo antes y durante la realización de las actividades que se organizan en ESN, entre el equipo de planificación de actividades y el equipo de tesorería.
+
+En segundo lugar, el servicio de almacenamiento en la nube tiene el propósito de almacenar los archivos adjuntos, mencionados anteriormente, siguiendo una clasificación temporal en función a la fecha de emisión y el evento o actividad a la que pertenecen.
+
+Por último, se usan dos hojas de cálculo, para guardar y llevar un registro de toda la información relacionada con la propia factura. La primera es utilizada para llevar un registro de cada factura emitida en cada momento dentro de un evento, enlazándola con su archivo correspondiente guardado en la nube, junto con un indicador para señalar si ha sido liquidada. En la segunda se registra toda la información de la propia factura, como el servicio recibido o el importe cobrado, para posteriormente realizar las tareas de contabilidad asociadas a este tipo de gestiones.
+
+Aunque las herramientas que componen el entorno ciertamente facilitan su gestión y suponen una solución suficiente para ello, en ausencia de un sistema que automatice el proceso, el sistema entero depende de la introducción manual de datos, en cada herramienta por separado, lo cual es susceptible a provocar errores humanos, junto con posibles errores de coherencia en los datos, además de obligar a sus usuarios a gastar más tiempo en pasar datos de un lugar a otro.
+
+Por todo ello, se ve una clara necesidad de añadir, al entorno software de la organización, un sistema u aplicación que unifique la información y automatice el proceso de gestión, solventando así los problemas mencionados anteriormente, y mejorando su usabilidad para el equipo.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
