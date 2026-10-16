@@ -12,7 +12,7 @@
     <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <markdownProperty name="description" category="detail"><![CDATA[El proceso abarcará desde la justificación de un gasto por parte de un voluntario hasta su registro fiscal automatizado. El voluntario subirá el archivo PDF de la factura al SIGESN. Automáticamente, el sistema guardará el archivo en la ubicación correcta de Google Drive y extraerá los datos fiscales relevantes (proveedor, CIF, base imponible, IVA, totales). Posteriormente, el Tesorero recibirá una notificación para revisar los datos extraídos; tras su validación (y eventual modificación si hubiera errores de lectura), el sistema unificará la información en el registro central. ]]></markdownProperty>
-    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[]]></fileProperty>
+    <fileProperty name="diagram" category="detail" tooltip="file-info"><![CDATA[diagram (1).svg]]></fileProperty>
     <enumProperty name="importance" category="detail" tooltip="importance" choices="tbd critical high medium low optional">critical</enumProperty>
     <integerProperty name="width" category="detail" tooltip="width-info">98</integerProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement" traceType=":Proteus-dependency"/>
