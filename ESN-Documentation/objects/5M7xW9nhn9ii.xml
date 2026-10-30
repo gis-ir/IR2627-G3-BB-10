@@ -4,5 +4,9 @@
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Descripción de los subsistemas del sistema a desarrollar]]></stringProperty>
     <markdownProperty name="comments" category="general"><![CDATA[]]></markdownProperty>
   </properties>
-  <children/>
+  <children>
+    <child id="y9tn7js2yq6D"/>
+    <child id="597Bwewu4PJF"/>
+    <child id="KJujuByauu6Q"/>
+  </children>
 </object>
