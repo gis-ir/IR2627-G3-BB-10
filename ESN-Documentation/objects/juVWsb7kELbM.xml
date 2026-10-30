@@ -21,7 +21,7 @@
       <trace target="UCQb9gvj6rH8" traceType=":Proteus-information-source"/>
       <trace target="R3mZZ4EkmxTa" traceType=":Proteus-information-source"/>
     </traceProperty>
-    <markdownProperty name="results" category="results"><![CDATA[]]></markdownProperty>
+    <markdownProperty name="results" category="results"><![CDATA[En esta reunión le presentamos a Iván nuestras propuestas de solución y él nos proporcionó feedback al respecto. Nos indicó su interés en nuestra idea acerca del sistema de partners, además de comunicarnos la necesidad de un bot para responder preguntas frecuentes e informar de eventos. Entramos en detalle sobre los sistemas de facturas y valoraciones. Por último, se acordaron los siguientes pasos a seguir.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
