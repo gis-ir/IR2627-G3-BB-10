@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="rGLPEAtQtNps" classes="attribute" acceptedChildren=":Proteus-none" acceptedParents="entity-class association">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[fechaExpedición]]></stringProperty>
+    <stringProperty name="type" category="general"><![CDATA[Date]]></stringProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Fecha de expedición de la ESNCard.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

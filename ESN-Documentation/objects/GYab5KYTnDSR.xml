@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="GYab5KYTnDSR" classes="attribute" acceptedChildren=":Proteus-none" acceptedParents="entity-class association">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[descuento]]></stringProperty>
+    <stringProperty name="type" category="general"><![CDATA[Double]]></stringProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Porcentaje de descuento que el partner ofrece a los miembros de ESN Sevilla como parte del patrocinio.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
