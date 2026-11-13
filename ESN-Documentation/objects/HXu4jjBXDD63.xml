@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="HXu4jjBXDD63" classes="enum-value" acceptedChildren=":Proteus-none" acceptedParents="enumeration">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[PRESUPUESTADO]]></stringProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[El presupuesto destinado a la contratación del servicio se ha acordado.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
