@@ -2,7 +2,7 @@
 <object id="M64r3trdbXh9" classes="enum-value" acceptedChildren=":Proteus-none" acceptedParents="enumeration">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[ACTIVIDAD_SOLIDARIA]]></stringProperty>
-    <markdownProperty name="description" category="detail"><![CDATA[descripción]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[La actividad es de carácter solidario.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>

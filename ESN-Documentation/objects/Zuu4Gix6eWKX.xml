@@ -2,7 +2,7 @@
 <object id="Zuu4Gix6eWKX" classes="enum-value" acceptedChildren=":Proteus-none" acceptedParents="enumeration">
   <properties>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[TOUR]]></stringProperty>
-    <markdownProperty name="description" category="detail"><![CDATA[descripción]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[La actividad es un tour por Sevilla.]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
   <children/>
