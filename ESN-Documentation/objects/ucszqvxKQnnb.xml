@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="ucszqvxKQnnb" classes="enum-value" acceptedChildren=":Proteus-none" acceptedParents="enumeration">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[RECHAZADA]]></stringProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[La solicitud ha sido rechazada por el gestor de patrocinios.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

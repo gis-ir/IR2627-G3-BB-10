@@ -14,7 +14,7 @@
     </traceProperty>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
     <booleanProperty name="is-composition" category="detail" tooltip="is-composition">false</booleanProperty>
-    <markdownProperty name="description" category="detail"><![CDATA[Esta asociación representa el apoyo que los voluntarios brindan a los estudiantes internacionales.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[Esta asociación representa el apoyo que los voluntarios brindan a los estudiantes internacionales mediante el buddy system.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object business-requirement software-requirement model-element" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>

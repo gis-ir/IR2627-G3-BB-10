@@ -6,7 +6,7 @@
       <trace target="9WEgVohYLWoG" traceType=":Proteus-dependency"/>
     </traceProperty>
     <stringProperty name="multiplicity-lower-bound" category="general"><![CDATA[0]]></stringProperty>
-    <stringProperty name="multiplicity-upper-bound" category="general"><![CDATA[*]]></stringProperty>
+    <stringProperty name="multiplicity-upper-bound" category="general"><![CDATA[3]]></stringProperty>
     <booleanProperty name="ordered" category="general">false</booleanProperty>
     <markdownProperty name="description" category="detail"><![CDATA[]]></markdownProperty>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>

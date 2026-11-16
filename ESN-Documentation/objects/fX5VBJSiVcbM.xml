@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <object id="fX5VBJSiVcbM" classes="role" acceptedChildren=":Proteus-none" acceptedParents="association">
   <properties>
-    <stringProperty name=":Proteus-name" category="general"><![CDATA[voluntario]]></stringProperty>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[usuario]]></stringProperty>
     <traceProperty name="type" category="general" acceptedTargets="entity-class" traceType=":Proteus-dependency" maxTargetsNumber="1">
-      <trace target="skoNvdzYkkWL" traceType=":Proteus-dependency"/>
+      <trace target="aWq9fAiBnxJp" traceType=":Proteus-dependency"/>
     </traceProperty>
     <stringProperty name="multiplicity-lower-bound" category="general"><![CDATA[0]]></stringProperty>
     <stringProperty name="multiplicity-upper-bound" category="general"><![CDATA[*]]></stringProperty>
