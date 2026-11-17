@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="tg33fJHqkRnw" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Estado de resolución]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[indicador del ciclo de vida de la incidencia (ej. Abierta, En mediación/revisión, Resuelta, Cerrada con histórico).]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

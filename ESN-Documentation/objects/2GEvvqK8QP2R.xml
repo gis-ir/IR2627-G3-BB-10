@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="2GEvvqK8QP2R" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Acciones correctoras o medidas adoptadas]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[texto descriptivo con la solución aplicada por la Junta Directiva o el equipo responsable.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="a7UPCFeDZtcT" classes="specific-data" acceptedChildren=":Proteus-none" acceptedParents="information-requirement">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Pregunta y respuesta]]></stringProperty>
+    <markdownProperty name="description" category="general"><![CDATA[texto de la consulta realizada y respuesta automatizada ofrecida por el asistente.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>
