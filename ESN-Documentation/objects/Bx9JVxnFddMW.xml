@@ -2,8 +2,8 @@
 <object id="Bx9JVxnFddMW" classes="software-requirement general-requirement" acceptedChildren="general-requirement" acceptedParents=":Proteus-any">
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
-      <prefix><![CDATA[RQG-]]></prefix>
-      <number>007</number>
+      <prefix><![CDATA[REGCS-]]></prefix>
+      <number>001</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Automatización de carga y procesamiento OCR de facturas]]></stringProperty>

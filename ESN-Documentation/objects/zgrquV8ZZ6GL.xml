@@ -2,8 +2,8 @@
 <object id="zgrquV8ZZ6GL" classes="software-requirement general-requirement" acceptedChildren="general-requirement" acceptedParents=":Proteus-any">
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
-      <prefix><![CDATA[RQG-]]></prefix>
-      <number>008</number>
+      <prefix><![CDATA[REGCS-]]></prefix>
+      <number>002</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Formulario web de captación pasiva de recursos]]></stringProperty>
