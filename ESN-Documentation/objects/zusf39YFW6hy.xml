@@ -2,8 +2,8 @@
 <object id="zusf39YFW6hy" classes="software-requirement general-requirement" acceptedChildren="general-requirement" acceptedParents=":Proteus-any">
   <properties>
     <codeProperty name=":Proteus-code" category="general" inmutable="true">
-      <prefix><![CDATA[RQG-]]></prefix>
-      <number>009</number>
+      <prefix><![CDATA[REGCS-]]></prefix>
+      <number>003</number>
       <suffix><![CDATA[]]></suffix>
     </codeProperty>
     <stringProperty name=":Proteus-name" category="general"><![CDATA[Operativa del asistente virtual 24/7]]></stringProperty>
