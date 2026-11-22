@@ -8,32 +8,27 @@
       <trace target="R3mZZ4EkmxTa" traceType=":Proteus-author"/>
     </traceProperty>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="text" category="detail"><![CDATA[SIGESN sigue una arquitectura lógica en tres capas, una variante del patrón Modelo-Vista-Controlador. Cada capa solo se comunica con la inmediatamente inferior, de modo que la interfaz de usuario, las reglas de negocio y el almacenamiento de la información pueden evolucionar de forma independiente. La capa de lógica de negocio se organiza en servicios que se corresponden con los subsistemas identificados en la ERS (<a href="#y9tn7js2yq6D" onclick="selectAndNavigate('y9tn7js2yq6D', event)">SUBS-001</a> a <a href="#RxyXkDiGX3oE" onclick="selectAndNavigate('RxyXkDiGX3oE', event)">SUBS-004</a>), a los que se añaden varios servicios transversales.
+    <markdownProperty name="text" category="detail"><![CDATA[En este apartado describimos la arquitectura lógica de SIGESN, es decir, cómo se organiza el sistema internamente y con qué sistemas externos se comunica. Hemos decidido seguir una arquitectura en tres capas basada en el patrón Modelo-Vista-Controlador, ya que es la opción más habitual en sistemas de información como este y nos permite separar la interfaz, la lógica y los datos. De esta forma, cada capa solo se comunica con la inmediatamente inferior, y si en un futuro hay que cambiar alguna de ellas no es necesario modificar el resto.
 
-Las capas del sistema son las siguientes:
+Para organizar la capa de negocio hemos aprovechado los subsistemas que ya definimos en la ERS (<a href="#y9tn7js2yq6D" onclick="selectAndNavigate('y9tn7js2yq6D', event)">SUBS-001</a> a <a href="#RxyXkDiGX3oE" onclick="selectAndNavigate('RxyXkDiGX3oE', event)">SUBS-004</a>), de manera que cada uno de ellos tiene su propio servicio. A continuación se especifican las capas del sistema:
 
-- **Capa de presentación:** agrupa los puntos de acceso al sistema, todos ellos web y adaptados a dispositivos móviles:
-    - *Portal web público:* información general de ESN Sevilla, catálogo de actividades y formulario de solicitud de patrocinio para las empresas (<a href="#zgrquV8ZZ6GL" onclick="selectAndNavigate('zgrquV8ZZ6GL', event)">RQG-008</a>).
-    - *Área privada de usuarios:* permite a los estudiantes internacionales inscribirse en actividades, solicitar la ESNcard y publicar valoraciones, y a los voluntarios subir las facturas de las actividades (<a href="#Bx9JVxnFddMW" onclick="selectAndNavigate('Bx9JVxnFddMW', event)">RQG-007</a>).
-    - *Panel de gestión interna:* reservado a los voluntarios según su rol. Incluye la gestión y validación de facturas, la evaluación de solicitudes de patrocinio y el dashboard de redes sociales (<a href="#PsTQxakNvhgF" onclick="selectAndNavigate('PsTQxakNvhgF', event)">RQG-006</a>).
-    - *Widget del asistente virtual:* chat integrado en la web que atiende de forma autónoma las preguntas frecuentes de los estudiantes (<a href="#zusf39YFW6hy" onclick="selectAndNavigate('zusf39YFW6hy', event)">RQG-009</a>).
-- **Capa de lógica de negocio:** implementa los casos de uso y las reglas de negocio de la ERS mediante los siguientes servicios:
-    - *Servicio de actividades y usuarios* (<a href="#y9tn7js2yq6D" onclick="selectAndNavigate('y9tn7js2yq6D', event)">SUBS-001</a>): actividades, inscripciones, ESNcard, valoraciones y asignación de buddies.
-    - *Servicio de redes sociales* (<a href="#597Bwewu4PJF" onclick="selectAndNavigate('597Bwewu4PJF', event)">SUBS-002</a>): planificación de publicaciones en varias plataformas y obtención de estadísticas de interacción.
-    - *Servicio de tesorería* (<a href="#KJujuByauu6Q" onclick="selectAndNavigate('KJujuByauu6Q', event)">SUBS-003</a>): recepción, almacenamiento, validación y corrección de facturas.
-    - *Servicio de patrocinios* (<a href="#RxyXkDiGX3oE" onclick="selectAndNavigate('RxyXkDiGX3oE', event)">SUBS-004</a>): recepción, evaluación, subsanación y aprobación o rechazo de las solicitudes de patrocinio.
-    - *Servicio de soporte automatizado:* lógica del asistente virtual y transferencia de la conversación a un voluntario cuando no puede resolver una consulta (<a href="#tgALSo4HDADY" onclick="selectAndNavigate('tgALSo4HDADY', event)">RQG-005</a>).
-    - *Servicio de autenticación y roles:* identificación de los usuarios y control de acceso según su rol (estudiante, voluntario, tesorero, gestor de patrocinios, etc.).
-    - *Servicio de notificaciones:* envío centralizado de los avisos que generan los demás servicios, eligiendo el canal y los destinatarios.
-    - *Módulo de extracción de datos fiscales:* modelo de IA ejecutado en local (<a href="#rZfXborYBf5t" onclick="selectAndNavigate('rZfXborYBf5t', event)">ACT-007</a>) que extrae el proveedor, el CIF, la base imponible y el IVA de las facturas en PDF.
-- **Capa de persistencia:** un repositorio de datos que aísla a los servicios del almacenamiento, sobre una base de datos relacional que centraliza la información del sistema (usuarios, actividades, inscripciones, pagos, facturas, partners, etc.).
+1. **Capa de Presentación:** incluye todos los puntos de acceso al sistema. Toda la interfaz es web y responsive, por lo que no es necesario desarrollar una app nativa.
+    - *Portal Web Público:* información general de ESN Sevilla, catálogo de actividades, directorio de partners y formulario de solicitud de patrocinio para empresas (<a href="#zgrquV8ZZ6GL" onclick="selectAndNavigate('zgrquV8ZZ6GL', event)">REGCS-002</a>).
+    - *Área Privada:* zona donde los estudiantes internacionales se inscriben en actividades, solicitan su ESNCard y publican valoraciones, y donde los voluntarios suben las facturas de las actividades (<a href="#Bx9JVxnFddMW" onclick="selectAndNavigate('Bx9JVxnFddMW', event)">REGCS-001</a>).
+    - *Panel de Gestión Interna:* zona reservada a los voluntarios, que muestra a cada uno las opciones propias de su rol: validación de facturas, solicitudes de patrocinio, bandeja de soporte humano y dashboard de redes sociales (<a href="#PsTQxakNvhgF" onclick="selectAndNavigate('PsTQxakNvhgF', event)">RQG-006</a>).
+    - *Widget del Asistente Virtual:* chat integrado en la web que responde a las preguntas frecuentes de los estudiantes las 24 horas (<a href="#zusf39YFW6hy" onclick="selectAndNavigate('zusf39YFW6hy', event)">REGCS-003</a>).
+2. **Capa de Lógica de Negocio:** implementa los casos de uso y las reglas de negocio definidos en la ERS.
+    - *Servicio de Actividades y Usuarios* (<a href="#y9tn7js2yq6D" onclick="selectAndNavigate('y9tn7js2yq6D', event)">SUBS-001</a>): inscripciones, ESNCard, valoraciones y asignación de buddies.
+    - *Servicio de Redes Sociales* (<a href="#597Bwewu4PJF" onclick="selectAndNavigate('597Bwewu4PJF', event)">SUBS-002</a>): programación de publicaciones y obtención de estadísticas.
+    - *Servicio de Tesorería* (<a href="#KJujuByauu6Q" onclick="selectAndNavigate('KJujuByauu6Q', event)">SUBS-003</a>): recepción, almacenamiento y validación de facturas.
+    - *Servicio de Patrocinios* (<a href="#RxyXkDiGX3oE" onclick="selectAndNavigate('RxyXkDiGX3oE', event)">SUBS-004</a>): gestión de las solicitudes de patrocinio hasta su aprobación o rechazo.
+    - *Servicio de Soporte Automatizado:* lógica del bot y derivación de la conversación a un voluntario cuando no puede resolverla (<a href="#tgALSo4HDADY" onclick="selectAndNavigate('tgALSo4HDADY', event)">RQG-005</a>).
+    - *Servicio de Autenticación y Roles:* inicio de sesión y control de acceso según el rol del usuario (<a href="#chcHFGFNEUag" onclick="selectAndNavigate('chcHFGFNEUag', event)">RQNF-017</a>).
+    - *Servicio de Notificaciones:* envío centralizado de los avisos que generan el resto de servicios.
+    - *Módulo de Extracción de Datos Fiscales:* modelo de IA que funciona en local (<a href="#rZfXborYBf5t" onclick="selectAndNavigate('rZfXborYBf5t', event)">ACT-007</a>) y extrae de cada factura en PDF el proveedor, el CIF, la base imponible y el IVA.
+3. **Capa de Persistencia:** formada por un repositorio de datos, que hace de intermediario entre los servicios y el almacenamiento, y una base de datos relacional donde se guarda toda la información del sistema.
 
-SIGESN se integra con los siguientes sistemas externos:
-
-- **Google Drive** (<a href="#DaYETeRbmjGF" onclick="selectAndNavigate('DaYETeRbmjGF', event)">ACT-006</a>): el servicio de tesorería guarda en él las facturas recibidas y las hojas de cálculo con los datos extraídos, y el módulo de extracción lee de él las facturas pendientes de procesar.
-- **Pasarela de pago:** el servicio de actividades y usuarios la usa para cobrar las inscripciones a las actividades y la ESNcard.
-- **Servicio de correo electrónico:** el servicio de notificaciones lo usa para enviar los avisos a estudiantes, voluntarios y empresas.
-- **APIs de redes sociales:** el servicio de redes sociales las usa para publicar contenido y obtener las estadísticas de interacción.]]></markdownProperty>
+Además, SIGESN necesita comunicarse con varios sistemas externos. El principal es Google Drive (<a href="#DaYETeRbmjGF" onclick="selectAndNavigate('DaYETeRbmjGF', event)">ACT-006</a>), donde tesorería guarda actualmente las facturas y donde seguirán almacenándose junto con las hojas de cálculo que genera el módulo de IA. También se utilizan una pasarela de pago para cobrar las inscripciones y la ESNCard, un servicio de correo electrónico para enviar las notificaciones y las APIs de Instagram, TikTok y X para publicar contenido y obtener las métricas del dashboard.]]></markdownProperty>
     <traceProperty name="dependencies" category="dependencies" acceptedTargets="traceable-object" traceType=":Proteus-dependency"/>
     <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
   </properties>
