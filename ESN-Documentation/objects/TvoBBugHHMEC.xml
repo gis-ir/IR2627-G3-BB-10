@@ -13,7 +13,7 @@
       <trace target="UCQb9gvj6rH8" traceType=":Proteus-author"/>
     </traceProperty>
     <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
-    <markdownProperty name="description" category="detail"><![CDATA[El sistema deberá ofrecer todo el contenido del área de estudiantes internacionales (texto, notificaciones, mensajes de error etc) en español e inglés como mínimo, permitiendo cambiar el idioma en un máximo de 3 clics.]]></markdownProperty>
+    <markdownProperty name="description" category="detail"><![CDATA[El sistema deberá ofrecer todo el contenido del área de estudiantes internacionales (texto, notificaciones, mensajes de error etc) en español e inglés como mínimo, permitiendo cambiar el idioma en un máximo de 2 clics.]]></markdownProperty>
     <enumProperty name="importance" category="priority" tooltip="importance" choices="tbd critical high medium low optional">critical</enumProperty>
     <enumProperty name="urgency" category="priority" tooltip="urgency" choices="tbd high medium low">high</enumProperty>
     <enumProperty name="status" category="priority" tooltip="status" choices="tbd draft awaiting-qa awaiting-validation validated">validated</enumProperty>
